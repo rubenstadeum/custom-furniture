@@ -1,7 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  text-align: end;
-  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #hero {
@@ -9,8 +25,10 @@ body {
     margin: 72px;
 }
 
-img {
-    margin: 100px;
+.bg-img {
+  display: block;
+  border: 1px solid red;
+  margin: 0 auto;
 }
 
 h1 {
@@ -51,6 +69,6 @@ p, #footer {
 
 #balls {
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
 }
